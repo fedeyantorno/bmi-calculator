@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IMC - Calculadora</title>
+    <link rel="stylesheet" href="css/styles.css">
+
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <link href="https://cdn.jsdelivr.net/gh/eliyantosarage/font-awesome-pro@main/fontawesome-pro-6.5.2-web/css/all.min.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="container-main">
+            <div class="calculator flex">
+                <div class="intro">
+                    <div class="iso"><i class="fa-solid fa-weight-scale"></i></div>
+                    <h1 class="title-header">Calculadora de Indice de masa corporal</h1>
+                    <p class="text">Comprenda mejor su peso en relación con su altura utilizando nuestra calculadora de
+                        índice de masa
+                        corporal (BM). Si bien el IMC no es el único determinante de un peso saludable, ofrece un
+                        valioso
+                        punto de partida para evaluar su salud y bienestar general.</p>
+                </div>
+                <div class="form">
+                    <div class="container-form">
+                        <form id="calculator" action="#">
+                            <h4 class="subtitle">Ingrese sus datos a continuación</h4>
+                            <div class="printAlert"></div>
+                            <div class="flex">
+                                <div class="form-group col-md-6">
+                                    <label for="height">Altura (mt.)</label>
+                                    <input type="text" class="form-control" id="height" placeholder="0">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <label for="weight">Peso (kg.)</label>
+                                    <input type="text" class="form-control" id="weight" placeholder="0">
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-primary full-width">Calcular</button>
+                            <div class="result">
+                                <div class="welcome">
+                                    <h4>Bienvenido!</h4>
+                                    <p class="text-result">Ingrese su altura y peso y verá el resultado de su IMC aquí
+                                    </p>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+
+            <div class="means">
+                <div class="top flex">
+                    <div class="img-means">
+                        <img src="img/comida-sana-sm.jpg" class="img-responsive">
+                    </div>
+                    <div class="block-text">
+                        <h2 class="title">¿Qué significa su resultado de IMC?</h2>
+                        <p class="text">Un rango de IMC de 18,5 a 24,9 se considera un "peso saludable". Mantener un
+                            peso saludable puede reducir las posibilidades de experimentar problemas de salud en el
+                            futuro, como obesidad y diabetes tipo 2. Trate de llevar una dieta nutritiva que reduzca el
+                            contenido de grasas y azúcares, incorporando abundantes frutas y verduras. Además,
+                            esfuércese por realizar actividad física con regularidad, idealmente unos 30 minutos diarios
+                            durante cinco días a la semana.</p>
+                    </div>
+                </div>
+                <div class="bottom flex">
+                    <div class="item">
+                        <div class="icon-1"><i class="fa-regular fa-salad"></i></div>
+                        <h4 class="subtitle">Alimentación saludable</h4>
+                        <p class="text">Una alimentación saludable promueve el control del peso, la prevención de
+                            enfermedades, una mejor digestión, la inmunidad y la claridad mental.</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon-2"><i class="fa-regular fa-dumbbell"></i></div>
+                        <h4 class="subtitle">Ejercicio regular</h4>
+                        <p class="text">El ejercicio mejora el estado físico, ayuda a controlar el peso, eleva el estado
+                            de ánimo y reduce el riesgo de enfermedades.</p>
+                    </div>
+                    <div class="item">
+                        <div class="icon-3"><i class="fa-regular fa-moon-stars"></i></div>
+                        <h4 class="subtitle">Sueño adecuado</h4>
+                        <p class="text">El sueño mejora la claridad mental, la estabilidad emocional y el bienestar
+                            físico, promoviendo la restauración y el rejuvenecimiento general.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info flex">
+                <div class="block-intro">
+                    <h2 class="title">Limitaciones del IMC</h2>
+                    <p class="text">Aunque el IMC suele ser un indicador práctico de un peso saludable, no es adecuado
+                        para todas las personas. Grupos específicos deben considerar cuidadosamente los resultados de su
+                        IMC y, en ciertos casos, es posible que no sea beneficioso utilizar la medición.</p>
+                </div>
+                <div class="block">
+                    <h5><i class="fa-regular fa-mars-and-venus orange"></i> Género</h5>
+                    <p class="text">El desarrollo y la composición de la grasa corporal de niñas y niños varían con la
+                        edad. En consecuencia, la edad y el género de un niño se consideran al evaluar su IMC.</p>
+                </div>
+                <div class="block">
+
+                    <h5><i class="fa-regular fa-cake-candles turquoise"></i> Edad</h5>
+                    <p class="text">En las personas que envejecen, el aumento de la grasa corporal y la pérdida de masa
+                        muscular pueden hacer que el IMC subestime el contenido de grasa corporal.</p>
+                </div>
+                <div class="block">
+                    <h5><i class="fa-regular fa-dumbbell violet"></i> Músculo</h5>
+                    <p class="text">El IMC puede clasificar erróneamente a las personas musculosas como con sobrepeso u
+                        obesidad, ya que no diferencia el músculo de la grasa.</p>
+                </div>
+                <div class="block">
+                    <h5><i class="fa-regular fa-person-pregnant yellow"></i> Embarazo</h5>
+                    <p class="text">Las mujeres embarazadas experimentan un aumento de peso debido al crecimiento de su
+                        bebé. Es recomendable mantener un IMC saludable antes del embarazo para minimizar los riesgos
+                        para la salud tanto de la madre como del niño.</p>
+                </div>
+                <div class="block">
+                    <h5><i class="fa-regular fa-person red"></i> Orígenes</h5>
+                    <p class="text">Ciertos problemas de salud pueden afectar a personas de algunos orígenes negros y
+                        asiáticos con un IMC más bajo que otros. Para obtener más información, se recomienda hablar
+                        sobre esto con su médico de cabecera o enfermera de práctica.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="js/main.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
